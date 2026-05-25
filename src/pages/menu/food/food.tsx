@@ -1,5 +1,4 @@
 import styles from './food.module.scss';
-import { useParams } from 'react-router-dom';
 
 function Food(){
     return(

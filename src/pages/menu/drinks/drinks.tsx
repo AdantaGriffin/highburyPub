@@ -1,8 +1,6 @@
 import styles from './drinks.module.scss';
-import { useParams } from 'react-router-dom';
 
 function Drinks(){
-    const {drinks} = useParams();
     return(
         <>
             <section className={styles.drinks}>
