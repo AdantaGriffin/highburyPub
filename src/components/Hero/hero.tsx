@@ -36,10 +36,6 @@ function Hero(){
                 ))}
                 </ul>
 
-                <div className={styles.controlsContainer}>
-                    <button>{"<"}</button>
-                    <button>{">"}</button>
-                </div>
             </section>
         </>
     )
