@@ -23,7 +23,7 @@ function Hero(){
             <section className={styles.hero}>
 
                 <ul className={styles.heroSlideContainer}>
-                    {slides.map(x => (
+                    {slides?.map(x => (
                     <li className={styles.slideItem} key={x.id}>
                         {x.image.endsWith(".mp4") ? (
                             <video autoPlay muted loop>
