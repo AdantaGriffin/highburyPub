@@ -4,7 +4,7 @@ function Drinks(){
     return(
         <>
             <section className={styles.drinks}>
-                {drinks}
+                
                 <div className={styles.topImages}>
                     <div className={styles.topImage1Container}>
                         <img src='./menu/beerMenu1.jpg' alt="menu 1"/>
