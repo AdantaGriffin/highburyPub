@@ -2,7 +2,6 @@ import styles from './food.module.scss';
 import { useParams } from 'react-router-dom';
 
 function Food(){
-    const {food} = useParams()
     return(
         <>
             <section className={styles.food}>
