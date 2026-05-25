@@ -1,0 +1,36 @@
+.menu{
+    height: 100vh;
+    color: white;
+
+    .menuFood{
+        border: 3px solid #DB0007;
+        height: 50%;
+        align-content: center;
+        text-align: center;
+        a{
+            color: #DB0007;
+            text-shadow: 1px 1px 10px white;
+            text-decoration: none;
+            font-size: 180px;
+            &:hover{
+            text-shadow: 1px 1px 10px gold;
+            }
+        }
+
+    }
+    .menuDrinks{
+        border: 3px solid #DB0007;
+        height: 50%;
+        align-content: center;
+        text-align: center;
+        a{
+            text-shadow: 1px 1px 10px white;
+            color: #DB0007;
+            text-decoration: none;
+            font-size: 180px;
+            &:hover{
+            text-shadow: 1px 1px 10px gold;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.topImages{
+    height: 500px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    img{
+        height: 100%;
+        width: 100%;
+        box-shadow: 1px 1px 10px black;
+    }
+    .topImage1Container{
+        height: 80%;
+        width: 80%;
+        max-width: 375px;
+        margin: auto;
+    }
+    .topImage2Container{
+        height: 80%;
+        width: 80%;
+        max-width: 375px;
+        margin: auto;
+    }
+}
+
+.spirits{
+    border: 1px solid white;
+
+    .spiritsList{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        li{
+            border: 1px solid white;
+            width: 50px;
+            height: 100px;
+        }
+    }
+}
+
+.heritage{
+    border: 1px solid white;
+
+    .heritageList{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li{
+            border: 1px solid black;
+            padding: 0 10px;
+
+        }
+    }
+}

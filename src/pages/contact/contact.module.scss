@@ -1,0 +1,23 @@
+.contact{
+    height: 80vh;
+    align-content: center;
+
+    .contactForm{
+        border: 1px solid white;
+        border-radius: 10px;
+        height: 450px;
+        width: 400px;
+        margin: auto;
+
+        display: grid;
+
+        input{
+            padding: 0 20px;
+            margin: auto;
+            height: 50px;
+            width: 80%;
+            border-radius: 10px;
+            opacity: .6;
+        }
+    }
+}

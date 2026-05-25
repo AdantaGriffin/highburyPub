@@ -1,0 +1,41 @@
+.visit{
+    height: 100vh;
+
+    .textContainer{
+        color: white;
+        height: 40%;
+        width: 80%;
+        margin: auto;
+        margin: 10px auto;
+        text-align: center;
+        h2{
+            color: #9C824A;
+            text-shadow: 1px 1px 1px  #023474;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            &:hover{
+                cursor: pointer;
+                text-decoration: underline #9C824A;
+                text-underline-offset: 3px;
+            }
+            p{
+                width: 80%;
+                margin: auto;
+                text-shadow: 1px 1px 1px #9C824A;
+            }
+        }
+        .textList{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+    }
+    .mapContainer{
+        border: 5px solid #9C824A;
+        height: 55%;
+        width: 90%;
+        margin: 10px auto;
+    }
+}

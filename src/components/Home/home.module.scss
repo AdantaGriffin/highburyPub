@@ -1,0 +1,44 @@
+
+.homeSubtext{
+    color: white;
+    text-align: center;
+    align-content: center;
+    height: 30vh;
+    font-size: 1.2em;
+}
+.comeBy{
+    height: 70vh;
+    align-content: center;
+    background-image: url('/public/comeby/comeby.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    .comeByContainer{
+        background: rgba(239, 145, 145, 0.5);
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        align-content: center;
+        color: white;
+        h2{
+            font-size: clamp(40px, 5vw, 80px);
+            color: #9C824A;
+            text-shadow: 1px 1px 1px  #023474;
+        }
+        a{
+            text-decoration: none;
+            background-color: white;
+            color: #DB0007;
+            padding: 10px 30px;
+            border-radius: 10px;
+            border: none;
+            &:hover{
+                cursor: pointer;
+                box-shadow: inset 1px 1px 5px black;
+            }
+            &:active{
+                box-shadow: inset 1px 1px 10px black;
+            }
+        }
+    }
+}
