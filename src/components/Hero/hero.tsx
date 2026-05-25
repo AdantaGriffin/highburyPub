@@ -26,7 +26,7 @@ function Hero(){
                     {slides?.map(x => (
                     <li className={styles.slideItem} key={x.id}>
                         {x.image.endsWith(".mp4") ? (
-                            <video autoPlay muted loop>
+                            <video autoPlay muted loop playsInline>
                                 <source src={x.image} type="video/mp4" />
                             </video>
                         ) : (

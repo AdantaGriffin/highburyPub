@@ -2,31 +2,31 @@
     "heroimages":[
         {
             "id":"hero1",
-            "image":"/public/hero/highburyHeroVid.mp4"
+            "image":"/hero/highburyHeroVid.mp4"
         },
         {
             "id":"hero2",
-            "image":"/public/hero/highburyHero1.jpg"
+            "image":"/hero/highburyHero1.jpg"
         },
         {
             "id":"hero3",
-            "image":"/public/hero/highburyHero2.jpg"
+            "image":"/hero/highburyHero2.jpg"
         },
         {
             "id":"hero4",
-            "image":"/public/hero/highburyHero3.jpg"
+            "image":"/hero/highburyHero3.jpg"
         },
         {
             "id":"hero5",
-            "image":"/public/hero/highburyHero4.jpg"
+            "image":"/hero/highburyHero4.jpg"
         },
         {
             "id":"hero6",
-            "image":"/public/hero/highburyHero5.jpg"
+            "image":"/hero/highburyHero5.jpg"
         },
         {
             "id":"hero7",
-            "image":"/public/hero/highburyHero6.jpg"
+            "image":"/hero/highburyHero6.jpg"
         }
     ]
 }
