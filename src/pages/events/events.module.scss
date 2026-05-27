@@ -1,16 +1,37 @@
-.events{
-    border: 1px solid white;
+.reservations{
+    min-height: 100vh;
     text-align: center;
     color: white;
 
-    .eventsHero{
-        border: 1px solid white;
-        height: 500px;
+
+    .reservationsDetails{
+        height: 60%;
         align-content: center;
+        background-image: url('../../../public/comeby/wbk.jpg');
+        opacity: .8;
+        background-size: 100% 100%;
+        h3{
+            font-size: clamp(40px, 10vw , 100px);
+        }
     }
-    .eventsDetaiils{
+    .recentEvents{
+        min-height: 300px;
         border: 1px solid white;
-        min-height: 600px;
+    }
+    .reservationsLink{
+        height: 40%;
         align-content: center;
+        h3{
+            color: #9C824A;
+            text-shadow: 1px 1px 1px  #023474;
+        }
+        a{
+            color: white;
+            text-decoration: underline #9C824A;
+            text-underline-offset: 10px;
+            &:hover{
+                color: #9C824A;
+            }
+        }
     }
 }

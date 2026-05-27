@@ -26,7 +26,7 @@ function Header(){
                         <ul className={styles.navList}>
                             <li className={styles.navLink}><NavLink to="/visit">Visit</NavLink></li>
                             <li className={styles.navLink}><NavLink to="/menu">Menu</NavLink></li>
-                            <li className={styles.navLink}><NavLink to="/reservations">Reservations</NavLink></li>
+                            {/*<li className={styles.navLink}><NavLink to="/reservations">Reservations</NavLink></li>*/}
                             <li className={styles.navLink}><NavLink to="/about">About</NavLink></li>
                             <li className={styles.navLink}><NavLink to="/events">Events</NavLink></li>
                             <li className={styles.orderDelivery}><NavLink to="/order">Order & Delivery</NavLink></li>
@@ -39,7 +39,7 @@ function Header(){
                             </div>
                             <li className={styles.dropLink}><NavLink onClick={clickDrop} to="/visit">Visit</NavLink></li>
                             <li className={styles.dropLink}><NavLink onClick={clickDrop} to="/menu">Menu</NavLink></li>
-                            <li className={styles.dropLink}><NavLink onClick={clickDrop} to="/reservations">Reservations</NavLink></li>
+                            {/*<li className={styles.dropLink}><NavLink onClick={clickDrop} to="/reservations">Reservations</NavLink></li>*/}
                             <li className={styles.dropLink}><NavLink onClick={clickDrop} to="/about">About</NavLink></li>
                             <li className={styles.dropLink}><NavLink onClick={clickDrop} to="/events">Events</NavLink></li>
                             <li className={styles.dropLink}><NavLink onClick={clickDrop} to="/order">Order & Delivery</NavLink></li>

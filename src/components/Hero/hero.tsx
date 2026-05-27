@@ -10,14 +10,14 @@ function Hero(){
   const [slides, setSlides] = useState<Slide[]>([]);
 
   useEffect(() => {
-    async function slides(){
+    async function getSlides(){
         const response = await fetch(`/heroSlides.json`);
         const result = await response.json();
         console.log(result.heroimages);
         setSlides(result.heroimages);
-    }
-    slides()
-  }, [])
+    };
+    getSlides()
+  }, []);
     return(
         <>
             <section className={styles.hero}>

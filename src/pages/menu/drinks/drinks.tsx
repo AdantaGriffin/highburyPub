@@ -1,6 +1,24 @@
 import styles from './drinks.module.scss';
+import {useState, useEffect} from 'react';
+
+type Spirit = {
+    id: string;
+    name: string;
+    image: string;
+}
 
 function Drinks(){
+    const [spirits, setSpirits] = useState<Spirit[]>([]);
+
+    useEffect(() => {
+        async function getSpirits(){
+            const response = await fetch('/menu.json')
+            const result = await response.json();
+            //console.log(result.spirits)
+            setSpirits(result.spirits)
+        };
+        getSpirits()
+    }, []);
     return(
         <>
             <section className={styles.drinks}>
@@ -16,46 +34,29 @@ function Drinks(){
 
                 <div className={styles.spirits}>
                     <ul className={styles.spiritsList}>
-                        <li>jameson</li>
-                        <li>bushmills</li>
-                        <li>jack daniel</li>
-                        <li>jim beam</li>
-                        <li>glenfiddich</li>
-                        <li>gordons</li>
-                        <li>beefeater</li>
-                        <li>bombay saphire</li>
-                        <li>vodka</li>
-                        <li>smirnoff red</li>
-                        <li>glens</li>
-                        <li>absolut blue</li>
-                        <li>grey goose</li>
-                        <li>belveder</li>
-                        <li>tequila</li>
-                        <li>jose cuervo</li>
-                        <li>el jimadorblanco</li>
-                        <li>don julio</li>
-                        <li>casamigos</li>
-                        <li>espolon</li>
-                        <li>rum</li>
-                        <li>the kraken</li>
-                        <li>bacardi</li>
-                        <li>captain morgan</li>
+                        {spirits?.map(x => (
+                            <li 
+                            className={styles.spiritItem}
+                            key={x.id}>
+                                <img src={x.image} alt="spirit image"/>
+                            </li>
+                        ))}
                     </ul>
                 </div>
 
                 <div className={styles.heritage}>
                     <ul className={styles.heritageList}>
-                        <li>irsh coffee</li>
-                        <li>calypso coffee</li>
-                        <li>negroni</li>
-                        <li>bloodymary</li>
-                        <li>screwdriver</li>
-                        <li>margherita</li>
-                        <li>The Bramble</li>
-                        <li>The Vesper Martini</li>
-                        <li>Pimm’s No. 1</li>
-                        <li>Black Velvet</li>
-                        <li>Snakebite</li>
+                        <li className={styles.heritageItem}><p>irsh coffee</p><p>$$$</p></li>
+                        <li className={styles.heritageItem}><p>calypso coffee</p><p>$$$</p></li>
+                        <li className={styles.heritageItem}><p>negroni</p><p>$$$</p></li>
+                        <li className={styles.heritageItem}><p>bloodymary</p><p>$$$</p></li>
+                        <li className={styles.heritageItem}><p>screwdriver</p><p>$$$</p></li>
+                        <li className={styles.heritageItem}><p>margherita</p><p>$$$</p></li>
+                        <li className={styles.heritageItem}><p>The Bramble</p><p>$$$</p></li>
+                        <li className={styles.heritageItem}><p>The Vesper Martini</p><p>$$$</p></li>
+                        <li className={styles.heritageItem}><p>Pimm’s No. 1</p><p>$$$</p></li>
+                        <li className={styles.heritageItem}><p>Black Velvet</p><p>$$$</p></li>
+                        <li className={styles.heritageItem}><p>Snakebite</p><p>$$$</p></li>
                     </ul>
                 </div>
             </section>
