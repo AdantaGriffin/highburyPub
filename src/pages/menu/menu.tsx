@@ -6,10 +6,10 @@ function Menu(){
         <>
             <section className={styles.menu}>
                 <div className={styles.menuFood}>
-                    <Link to="/menu:food">food</Link>
+                    <Link to="/menu:food">Food</Link>
                 </div>
                 <div className={styles.menuDrinks}>
-                    <Link to='/menu:drinks'>drinks</Link>
+                    <Link to='/menu:drinks'>Drink</Link>
                 </div>
             </section>
         </>

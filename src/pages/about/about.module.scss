@@ -1,16 +1,23 @@
 .about{
-    border: 1px solid white;
     text-align: center;
     color: white;
 
     .aboutSlides{
-        border: 1px solid white;
         height: 500px;
         align-content: center;
+        background-image: url('../../../public/comeby/about.jpg');
+        background-size: 100% 100%;
+        h3{
+            font-size: clamp(100px, 10vw , 150px);
+        }
     }
     .aboutPub{
-        border: 1px solid blue;
         height: 600px;
         align-content: center;
+
+        p{
+            width: 75%;
+            margin: auto;
+        }
     }
 }

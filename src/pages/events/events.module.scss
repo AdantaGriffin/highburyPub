@@ -1,26 +1,29 @@
 .reservations{
-    min-height: 100vh;
+    min-height: 80vh;
     text-align: center;
     color: white;
 
 
     .reservationsDetails{
-        height: 60%;
+        min-height: 350px;
         align-content: center;
         background-image: url('../../../public/comeby/wbk.jpg');
         opacity: .8;
         background-size: 100% 100%;
         h3{
-            font-size: clamp(40px, 10vw , 100px);
+            font-size: clamp(100px, 10vw , 150px);
         }
     }
     .recentEvents{
-        min-height: 300px;
         border: 1px solid white;
+        min-height: 200px;
+        align-content: center;
+        margin-bottom: 25px;
     }
     .reservationsLink{
         height: 40%;
         align-content: center;
+        margin-bottom: 50px;
         h3{
             color: #9C824A;
             text-shadow: 1px 1px 1px  #023474;

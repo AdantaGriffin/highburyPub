@@ -1,21 +1,21 @@
 .menu{
     height: 100vh;
     color: white;
-
+     a{
+        text-shadow: 1px 1px 1px white;
+        color: #9C824A;
+        text-decoration: none;
+        font-size: 120px;
+        &:hover{
+        text-shadow: 1px 1px 10px gold;
+        }
+    }
     .menuFood{
         border: 3px solid #DB0007;
         height: 50%;
         align-content: center;
         text-align: center;
-        a{
-            color: #DB0007;
-            text-shadow: 1px 1px 10px white;
-            text-decoration: none;
-            font-size: 140px;
-            &:hover{
-            text-shadow: 1px 1px 10px gold;
-            }
-        }
+       
 
     }
     .menuDrinks{
@@ -23,14 +23,6 @@
         height: 50%;
         align-content: center;
         text-align: center;
-        a{
-            text-shadow: 1px 1px 10px white;
-            color: #DB0007;
-            text-decoration: none;
-            font-size: 140px;
-            &:hover{
-            text-shadow: 1px 1px 10px gold;
-            }
-        }
+       
     }
 }
